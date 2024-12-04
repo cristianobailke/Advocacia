@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Administrador - Lawson Group</title>
+    <link rel="stylesheet" href="styleadmin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">LAWSON GROUP</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#especialidades">Especialidades</a></li>
+                    <li><a href="index.html#localizacao">Localização</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main></main>
+        <div class="admin-container">
+            <h1>Área do Administrador</h1>
+            
+            <div id="loginForm">
+                <h2>Login</h2>
+                <form id="adminLoginForm" class="admin-form">
+                    <input type="email" id="adminEmail" placeholder="Email" required>
+                    <input type="password" id="adminPassword" placeholder="Senha" required>
+                    <button type="submit" class="btn">Entrar</button>
+                </form>
+            </div>
+
+            <div id="adminDashboard" class="admin-dashboard">
+                <h2>Painel de Controle</h2>
+                <button id="adminLogout" class="btn">Sair</button>
+
+                <div class="admin-section">
+                    <h3>Gerenciar Conteúdo</h3>
+                    <ul>
+                        <li><a href="#" id="editAbout">Editar Sobre</a></li>
+                        <li><a href="#" id="editSpecialties">Editar Especialidades</a></li>
+                        <li><a href="#" id="editContact">Editar Informações de Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="admin-section">
+                    <h3>Mensagens de Contato</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contactMessages">
+                            <!-- Messages will be populated here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lawson Group. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* Admin Page Styles */
+:root {
+    --gold-400: #ddb557;
+    --gold-500: #c6a454;
+    --gold-600: #b08d3c;
+    --black: #000000;
+    --zinc-950: #09090b;
+    --gray-400: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--gray-400);
+    background-color: var(--black);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold-500);
+}
+
+a {
+    color: var(--gray-400);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--gold-400);
+}
+
+/* Header */
+header {
+    background-color: var(--black);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gold-500);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Admin Container */
+.admin-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: var(--zinc-950);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Admin Form */
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-form input {
+    padding: 12px;
+    border: 1px solid var(--gold-500);
+    background-color: var(--black);
+    color: var(--gray-400);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.admin-form input:focus {
+    outline: none;
+    border-color: var(--gold-400);
+    box-shadow: 0 0 0 2px rgba(221, 181, 87, 0.2);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--gold-500);
+    color: var(--black);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--gold-600);
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+    display: none;
+}
+
+.admin-dashboard h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.admin-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.admin-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.admin-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-section ul li {
+    margin-bottom: 10px;
+}
+
+.admin-section ul li a {
+    color: var(--gold-400);
+}
+
+.admin-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Messages Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--gold-500);
+}
+
+th {
+    background-color: rgba(198, 164, 84, 0.1);
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--zinc-950);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
